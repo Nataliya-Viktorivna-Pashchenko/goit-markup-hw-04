@@ -40,6 +40,8 @@ body {
   --background-color: #ffffff;
   --color-text-contact: #434455;
   --border-button: #e7e9fc;
+  --border-icon: #8e8f99;
+  --color-icon: #f4f4fd;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -94,6 +96,8 @@ body {
   border-bottom: 1px solid #e7e9fc;
   padding-top: 24px;
   padding-bottom: 24px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -174,7 +178,7 @@ body {
   color: #ffffff;
 }
 .hero {
-  width: 1440px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 188px;
@@ -185,7 +189,9 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url("../images/people-office.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 /*-------Advantages---------*/
@@ -203,10 +209,13 @@ body {
   height: 224px;
 }
 .adv-item-icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 264px;
   height: 112px;
   padding: 24px 100px;
-  border-radius: 4%;
+  border-radius: 4px;
   background-color: #f4f4fd;
   margin-bottom: 8px;
 }
@@ -266,6 +275,9 @@ body {
   justify-content: center;
   gap: 24px;
 }
+.social-list-icon {
+  fill: var(--color-icon);
+}
 .social-list-link {
   display: flex;
   align-items: center;
@@ -281,14 +293,18 @@ body {
   background-color: #404bbf;
 }
 /*----------Customers------------*/
+.customer-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .customer-title {
-  margin-top: 120px;
+  line-height: 1.1;
+  margin-bottom: 72px;
 }
 .customer-list {
   display: flex;
   align-items: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .customer-list-link {
   display: flex;
@@ -296,12 +312,13 @@ body {
   justify-content: center;
   width: 168px;
   height: 88px;
-  border-radius: 4%;
+  border-radius: 4px;
+  color: var(--border-icon);
   border: 1px solid #8e8f99;
 }
 .customer-list-icon {
   display: block;
-  fill: #8e8f99;
+  fill: currentColor;
 }
 .customer-list-link:hover .customer-list-icon,
 .customer-list-link:focus .customer-list-icon {
@@ -309,7 +326,8 @@ body {
 }
 .customer-list-link:hover,
 .customer-list-link:focus {
-  border: 1px solid #4d5ae5;
+  color: #404bbf;
+  border-color: #404bbf;
 }
 /*---------Portfolio filter button---------*/
 .section-button {
@@ -365,8 +383,11 @@ body {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-.work-item:hover,
-.work-item:focus {
+.work-list-link {
+  display: block;
+}
+.work-list-link:hover,
+.work-list-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -389,13 +410,18 @@ body {
 }
 .underside-container {
   display: flex;
+  align-items: baseline;
 }
 .sm-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
 }
-.social-media {
-  margin-left: 120px;
+.advertising-slogan {
+  margin-right: 120px;
 }
 
 .social-list-link-us:hover,
