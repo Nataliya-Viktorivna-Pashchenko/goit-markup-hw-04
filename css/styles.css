@@ -319,7 +319,6 @@ body {
   border: 1px solid #8e8f99;
 }
 .customer-list-icon {
-  display: block;
   fill: currentColor;
 }
 .customer-list-link:hover .customer-list-icon,
