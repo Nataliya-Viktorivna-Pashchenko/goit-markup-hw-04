@@ -289,7 +289,6 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
-  gap: 16px;
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -321,7 +320,6 @@ body {
 }
 .customer-list-icon {
   display: block;
-  fill: #8e8f99;
 }
 .customer-list-link:hover .customer-list-icon,
 .customer-list-link:focus .customer-list-icon {
@@ -430,4 +428,9 @@ body {
 .social-list-link-us:hover,
 .social-list-link-us:focus {
   background-color: #31d0aa;
+}
+.social-list-us {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
