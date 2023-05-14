@@ -289,6 +289,7 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
+  gap: 16px;
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -320,7 +321,6 @@ body {
 }
 .customer-list-icon {
   display: block;
-  fill: currentColor;
 }
 .customer-list-link:hover .customer-list-icon,
 .customer-list-link:focus .customer-list-icon {
