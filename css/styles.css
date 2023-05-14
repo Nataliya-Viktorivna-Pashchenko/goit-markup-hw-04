@@ -320,6 +320,7 @@ body {
 }
 .customer-list-icon {
   display: block;
+  fill: currentColor;
 }
 .customer-list-link:hover .customer-list-icon,
 .customer-list-link:focus .customer-list-icon {
