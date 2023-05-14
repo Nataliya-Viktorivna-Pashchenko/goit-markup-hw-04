@@ -312,7 +312,7 @@ body {
   width: calc((100%-120px) / 6);
   height: 88px;
 }
-. .customer-list-link {
+.customer-list-link {
   display: flex;
   align-items: center;
   justify-content: center;
